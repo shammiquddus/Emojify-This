@@ -23,3 +23,8 @@ We used a sequential baseline and a bidirectional LSTM structure implemented in 
 * Baseline: Our baseline  model has two fully connected layers, one hidden layer and one output layer. The hidden layer uses a ReLu activation function with 64 hidden nodes. The output layer uses a sigmoid activation and contains 15 nodes. 
 
 * Final: Our final model is shown in the figure below. Each bidirectional LSTM layer has 128 nodes with tanh activation, each dropout layer is set to 50%, with a fully-connected softmax activation layer. We print the top five probabilities from the softmax layer. We use a cross-entropy loss function, an adam optimizer and accuray as our performance metric when compiling the model.
+
+![model_diagram](https://user-images.githubusercontent.com/31656996/40581532-277e4e7e-6110-11e8-881e-47be6efce9ad.png)
+
+### Results
+Our results showed that the sequential, bi-LSTM model performed substantially better over the baseline, non-LSTM model. Accuracy improved substantially on both the test set and on the training set. Using our bi-LSTM model, we were able to achieve test accuracy of 7.91%, which is quite impressive considering our data set consisted of 149 unique emojis. Our train accuracy is 16% and the difference of about 8 p.p. shows that we have a certain degree of overfitting.
