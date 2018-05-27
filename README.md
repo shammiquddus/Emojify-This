@@ -1,2 +1,2 @@
 # Emojiy-This
-LSTM Learning model to predict most likely emoji for Tweet (Stanford CS230 project)
+We use a dataset of tweets with emojis from an online twitter archive to train a model that predicts the likely emojis for a given tweet. Tweets with emojis are used to train a bidirectional LSTM with dropout, using the open source GloVe Twitter word vectors which have been trained on a Twitter corpus. Our results show a “Top 1 emoji” accuracy of about 10.7% on the test set. We discuss methods to improve upon this result. Sample outputs from our model include:
